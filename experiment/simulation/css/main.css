@@ -1,1 +1,50 @@
-/* You CSS goes in here */
+.custom-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title {
+  margin-top: 20px;
+}
+
+.custom-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button {
+  width: 100px;
+}
+
+.custom-box {
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid #f7717d; */
+  width: 80%;
+  /* border-radius: 20px; */
+  overflow: hidden;
+  margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  .custom-box {
+    width: 100%;
+  }
+}
+
+.custom-row {
+  display: flex;
+}
+
+.custom-cell {
+  flex: 1;
+  border: 1px solid #f7717d;
+  /* padding: 10px 20px; */
+  font-size: 25px;
+  text-align: center;
+}
+
+.columns {
+  margin-top: 20px;
+}
