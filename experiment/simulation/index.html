@@ -1,58 +1,24 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <!-- Add CSS at the head of HTML file -->
-    <!-- <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.2/css/bulma.min.css"
-    /> -->
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/gh/b30wulffz/virtual-style@0.0.5-b/css/style.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-  </head>
-  <body>
-    <div class="columns is-centered is-mobile">
-      <h2 class="title">Sorting</h2>
-    </div>
-    <div>
-      <div id="input1" class="input-container columns is-centered is-mobile">
-        <div class="column">
-          <input
-            type="text"
-            id="in1"
-            class="input input-field"
-            onkeyup="this.value = this.value.replace(/[^0123456789]/, '')"
-          />
-        </div>
-      </div>
-      <div class="columns is-centered is-mobile">
-        <div class="column">
-          <button id="push" class="button is-primary">Push</button>
-        </div>
-        <div class="column">
-          <button id="insertion-sort" class="button is-primary">
-            Insertion Sort
-          </button>
-        </div>
-        <div class="column">
-          <button id="merge-sort" class="button is-primary">Merge Sort</button>
-        </div>
-        <div class="column">
-          <button id="quick-sort" class="button is-primary">Quick</button>
-        </div>
-      </div>
-      <div class="custom-center">
-      <button id="clear" class="button is-primary custom-center">Clear</button>
-</div>
-    </div>
-    <div id="answer-container" class="custom-center" style="display: none">
-      <div class="custom-box">
-        <div id="val-1" class="custom-row"></div>
-      </div>
-    </div>
-    <script src="./js/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/animejs@3.0.1/lib/anime.min.js"></script>
-  </body>
+<head>
+	<!-- Add CSS at the head of HTML file -->
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+		<!-- Your code goes here-->
+
+	<p> See how various sorting algorithms work with various inputs, including best case, worst case, and average inputs. </p>
+        <ul>
+            <li> <a href="#" onclick='window.open("quick.html","Sorting Algorithms","height=800,width=800")'>Quick sort</a></li>
+            <br/>
+            <li><a href="#" onclick='window.open("merge.html","Sorting Algorithms","height=800,width=800")'>Merge Sort</a></li>
+            <br/>
+            <li>
+                <a href="#" onclick='window.open("insertion.html","Sorting Algorithms","height=800,width=800")'>Insertion Sort</a>
+            </li>
+        </ul>
+		
+	<!-- Add JS at the bottom of HTML file --> 
+        <script src="./js/main.js"></script>
+</body>
 </html>
